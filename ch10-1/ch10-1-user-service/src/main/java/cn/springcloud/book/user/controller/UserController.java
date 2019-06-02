@@ -24,9 +24,11 @@ public class UserController {
 	 */
     @GetMapping("/getDefaultUser")
     public String getDefaultUser(){
+
+        System.out.println("进来了。。");
         return userService.getDefaultUser();
     }
-    
+
     /**
      * 获取上下文用户
      * @return
